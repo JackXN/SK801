@@ -1,6 +1,6 @@
 module.exports = [
     {
-    first_name: 'Jack Rigan',
+    first_name: 'Jack',
     last_name: 'Rigan',
     phone: '801-441-9433',
     title: 'Lead Developer',
@@ -12,6 +12,4 @@ module.exports = [
     phone: '801-657-9902',
     title: 'CEO',
 },
-
-
 ]
