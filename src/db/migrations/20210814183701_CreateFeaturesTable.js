@@ -11,10 +11,10 @@ exports.up = function(knex) {
     .references('employee_id')
     .inTable('employees')
     table.timestamps(true,true)
-
     })
 };
 
 exports.down = function(knex) {
+
   return knex.schema.dropTable('features')
 };
