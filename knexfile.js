@@ -13,6 +13,9 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: DATABASE_URL,
+    migrations: {
+      directory: path.join(__dirname, 'src', 'db', 'migrations')
+    }
   },
 
 };
