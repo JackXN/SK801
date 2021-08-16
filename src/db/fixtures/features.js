@@ -5,5 +5,4 @@ module.exports = [
         platform: 'Web / Mobile',
         
     },
-
 ]
