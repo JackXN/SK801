@@ -5,6 +5,7 @@ exports.up = function(knex) {
       table.string('first_name');
       table.string('last_name');
       table.string('phone');
+      table.string('email')
       table.string('title');
       table.timestamps(true,true);
   })
@@ -13,3 +14,7 @@ exports.up = function(knex) {
 exports.down = function(knex) {
   return knex.schema.dropTable('employees')
 };
+
+
+
+
