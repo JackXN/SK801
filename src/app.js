@@ -7,7 +7,14 @@ const app = express();
 const cors = require('cors');
 
 const errorHandler = require('./errors/errorHandler');
+const notFound = require('./errors/notFound');
+const employeesRouter = require('./employees/employees.router');
+
+app.use(cors());
+app.use(express.json());
 
 
+app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;
